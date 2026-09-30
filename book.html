@@ -49,23 +49,83 @@
       <div class="container">
         <p class="eyebrow">Book</p>
         <h1>Book your experience</h1>
-        <p>Booking and payment are handled securely through Square.</p>
+        <p>Pick your date right here. Payment is finished on Square's secure checkout.</p>
         <div class="hero-actions">
-          <a class="btn btn-cta" href="[SQUARE_BOOKING_URL]">Book Now</a>
+          <a class="btn btn-cta" href="#choose">Choose your experience</a>
         </div>
       </div>
     </section>
 
-    <section class="section">
+    <section class="section" id="choose">
       <div class="container">
         <div class="section-head">
-          <p class="eyebrow">Pick a date</p>
-          <h2>Book online</h2>
-          <p>Use the button above, or choose your experience below once the booking calendar is connected.</p>
-          <p>Planning a party and need a custom quote first? <a href="/experiences/private-parties.html#quote">Request a quote</a>.</p>
+          <p class="eyebrow">Step 1</p>
+          <h2>What are you booking?</h2>
         </div>
+        <div class="grid grid--3 choice-grid">
+          <a class="choice-card" href="#private-events">
+            <h3>Private dinner or party</h3>
+            <p>Dinners at home, parties, date nights and kids parties, with a menu built for you.</p>
+            <span class="card-link">See open dates</span>
+          </a>
+          <a class="choice-card" href="#classes">
+            <h3>Cooking class or supper club</h3>
+            <p>Set dates with a few seats each. Reserve yours and pay online.</p>
+            <span class="card-link">See upcoming dates</span>
+          </a>
+          <a class="choice-card" href="#gift">
+            <h3>Gift an experience</h3>
+            <p>Give a dinner or a class to someone who loves to eat.</p>
+            <span class="card-link">Buy a gift card</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--alt" id="private-events">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">Private dinners and parties</p>
+          <h2>Hold your date</h2>
+          <p class="lead">Pick an open date below to hold it. I'll reach out to plan the menu with you.</p>
+        </div>
+        <ol class="steps">
+          <li><strong>Pick a date.</strong> Choose an open day in the calendar and place a hold.</li>
+          <li><strong>Plan the menu.</strong> I contact you within 24 hours about guests, menu and any dietary needs.</li>
+          <li><strong>Pay the balance.</strong> You get a Square invoice for the final amount.</li>
+        </ol>
         <!-- Paste Square embed code here -->
         <div class="embed-box" id="square-embed">Paste Square embed code here</div>
+        <p class="note">Want to talk through menu and budget first? <a href="/experiences/private-parties.html#quote">Request a quote</a>.</p>
+      </div>
+    </section>
+
+    <section class="section" id="classes">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">Cooking classes and supper club</p>
+          <h2>Upcoming dates</h2>
+          <p class="lead">Classes from $110/person, gratuity not included.</p>
+        </div>
+        <div class="grid grid--3">
+        <article class="date-card">
+          <p class="what">Cooking Class</p>
+          <p class="when">[DATE] · [TIME] · [SEATS]</p>
+          <a class="btn btn-cta" href="[SQUARE_CLASS_LINK_1]" aria-label="Reserve a seat, class date 1">Reserve a Seat</a>
+        </article>
+        <article class="date-card">
+          <p class="what">Cooking Class</p>
+          <p class="when">[DATE] · [TIME] · [SEATS]</p>
+          <a class="btn btn-cta" href="[SQUARE_CLASS_LINK_2]" aria-label="Reserve a seat, class date 2">Reserve a Seat</a>
+        </article>
+        <article class="date-card">
+          <p class="what">Cooking Class</p>
+          <p class="when">[DATE] · [TIME] · [SEATS]</p>
+          <a class="btn btn-cta" href="[SQUARE_CLASS_LINK_3]" aria-label="Reserve a seat, class date 3">Reserve a Seat</a>
+        </article>
+        </div>
+        <p class="note checkout-note">Reserve takes you to Square's secure checkout, then brings you right back here.</p>
+        <p class="note">Supper club dates fill fast. <a href="/experiences/supper-club.html#waitlist">Join the waitlist</a>.</p>
       </div>
     </section>
 

@@ -154,9 +154,17 @@ test('placeholder link click shows "Link coming soon"', async ({ page }) => {
 });
 
 test('class date cards use per-date Square payment link tokens', async ({ page }) => {
-  for (const p of ['index.html', 'experiences/cooking-classes.html']) {
+  for (const p of ['index.html', 'experiences/cooking-classes.html', 'book.html']) {
     await page.goto(url(p));
     const hrefs = await page.$$eval('.date-card a.btn', (as) => as.map((a) => a.getAttribute('href')));
     expect(hrefs, p).toEqual(['[SQUARE_CLASS_LINK_1]', '[SQUARE_CLASS_LINK_2]', '[SQUARE_CLASS_LINK_3]']);
   }
+});
+
+test('book page chooser jumps to each booking path', async ({ page }) => {
+  await page.goto('/book.html');
+  const targets = await page.$$eval('#choose .choice-card', (as) => as.map((a) => a.getAttribute('href')));
+  expect(targets).toEqual(['#private-events', '#classes', '#gift']);
+  for (const t of targets) await expect(page.locator(t)).toHaveCount(1);
+  await expect(page.locator('#private-events #square-embed')).toHaveCount(1);
 });
