@@ -1,0 +1,182 @@
+{
+  "js/main.js": {
+    "mtime": 1790749595.673972,
+    "ast_hash": "29c101feb914900ee6f8333ded14bd1f",
+    "semantic_hash": ""
+  },
+  "package.json": {
+    "mtime": 1790748694.9398968,
+    "ast_hash": "ad1771659b972adb208097c0e40b2f95",
+    "semantic_hash": ""
+  },
+  "playwright.config.js": {
+    "mtime": 1790748694.9417992,
+    "ast_hash": "7d59bbc305af9a57e8aede0a10182f81",
+    "semantic_hash": ""
+  },
+  "tests/site.spec.js": {
+    "mtime": 1790753218.2259085,
+    "ast_hash": "c7dea58ed87684992a3636c833a32c0b",
+    "semantic_hash": ""
+  },
+  "404.html": {
+    "mtime": 1790753232.5239742,
+    "ast_hash": "a707db27801ab95cea7c91b45b2c22c7",
+    "semantic_hash": ""
+  },
+  "README.md": {
+    "mtime": 1790753239.5493765,
+    "ast_hash": "a5959f6f5b565ab7b4d54f35ce65c445",
+    "semantic_hash": ""
+  },
+  "about.html": {
+    "mtime": 1790753232.5237627,
+    "ast_hash": "cf0a8573ba5e2251493a27d4a6ab44b1",
+    "semantic_hash": ""
+  },
+  "book.html": {
+    "mtime": 1790753232.5243683,
+    "ast_hash": "bd923f99c3a5c469136263b3382db966",
+    "semantic_hash": ""
+  },
+  "docs/design.md": {
+    "mtime": 1790753239.54978,
+    "ast_hash": "8a4c23746fcea054fedc9318d97148dc",
+    "semantic_hash": ""
+  },
+  "experiences/cooking-classes.html": {
+    "mtime": 1790753232.5260115,
+    "ast_hash": "a233f7135ac2be0cb0e7a8932c0351b9",
+    "semantic_hash": ""
+  },
+  "experiences/date-night.html": {
+    "mtime": 1790753232.525595,
+    "ast_hash": "64b40212679d86e87e284f8955ae1498",
+    "semantic_hash": ""
+  },
+  "experiences/kids-parties.html": {
+    "mtime": 1790753232.5251403,
+    "ast_hash": "9ea2566facc7b131ce4e8c594a2a6398",
+    "semantic_hash": ""
+  },
+  "experiences/private-chef.html": {
+    "mtime": 1790753232.5254016,
+    "ast_hash": "7881c57fef53fd2e92670ddc11773c22",
+    "semantic_hash": ""
+  },
+  "experiences/private-parties.html": {
+    "mtime": 1790753232.525821,
+    "ast_hash": "11d7c3640c002105be6c02b67ee86e0d",
+    "semantic_hash": ""
+  },
+  "experiences/supper-club.html": {
+    "mtime": 1790753232.526226,
+    "ast_hash": "3b6129b8ffacb1ba5fcf6224fcce4e8e",
+    "semantic_hash": ""
+  },
+  "faq-contact.html": {
+    "mtime": 1790753232.5247,
+    "ast_hash": "3a0e5aec687993a1a8484c8a2c654181",
+    "semantic_hash": ""
+  },
+  "gallery.html": {
+    "mtime": 1790753232.5241303,
+    "ast_hash": "38a817a69c9561055c7b0a7e5e048748",
+    "semantic_hash": ""
+  },
+  "index.html": {
+    "mtime": 1790753232.5232742,
+    "ast_hash": "82d45f78e2a83e180ed00e9f5ea3468d",
+    "semantic_hash": ""
+  },
+  "menus.html": {
+    "mtime": 1790753232.5235138,
+    "ast_hash": "c697155378b5d48078f5031494fb096f",
+    "semantic_hash": ""
+  },
+  "robots.txt": {
+    "mtime": 1790748694.935692,
+    "ast_hash": "4849c8f372d17d26b78829c00be045c6",
+    "semantic_hash": ""
+  },
+  "thank-you.html": {
+    "mtime": 1790753232.5248728,
+    "ast_hash": "5c6fa5ba127af8d56f424936cd82d3b5",
+    "semantic_hash": ""
+  },
+  "images/placeholders/class.svg": {
+    "mtime": 1790748209.512022,
+    "ast_hash": "77afd457b1363dc1363c57ab7d2b3244",
+    "semantic_hash": ""
+  },
+  "images/placeholders/date-night.svg": {
+    "mtime": 1790748209.512281,
+    "ast_hash": "85b2bb0e21fc1af5f1995e07393756b2",
+    "semantic_hash": ""
+  },
+  "images/placeholders/dinner.svg": {
+    "mtime": 1790748209.5119295,
+    "ast_hash": "9eecf70d2df158b5ab708829bfffea98",
+    "semantic_hash": ""
+  },
+  "images/placeholders/event.svg": {
+    "mtime": 1790748209.5121827,
+    "ast_hash": "90abd1d49c231776fcb532b17a493829",
+    "semantic_hash": ""
+  },
+  "images/placeholders/hero.svg": {
+    "mtime": 1790748209.5118208,
+    "ast_hash": "f782bd1e4518428474e57e7537e89b0d",
+    "semantic_hash": ""
+  },
+  "images/placeholders/instagram-1.svg": {
+    "mtime": 1790748209.5124469,
+    "ast_hash": "95c219b081240495e6eb8bb37124de7f",
+    "semantic_hash": ""
+  },
+  "images/placeholders/instagram-2.svg": {
+    "mtime": 1790748209.5125282,
+    "ast_hash": "837f3824b5b4417eeb67cdc3051aa90e",
+    "semantic_hash": ""
+  },
+  "images/placeholders/instagram-3.svg": {
+    "mtime": 1790748209.5126033,
+    "ast_hash": "6551f3bc3b800a0bc8a3aac4325e91d2",
+    "semantic_hash": ""
+  },
+  "images/placeholders/instagram-4.svg": {
+    "mtime": 1790748209.5128057,
+    "ast_hash": "fa442f19ad1dcb9f2acecd4dba61ba6e",
+    "semantic_hash": ""
+  },
+  "images/placeholders/instagram-5.svg": {
+    "mtime": 1790748209.5128913,
+    "ast_hash": "95ad02f2e5bf5bd34d02005b3bb45b79",
+    "semantic_hash": ""
+  },
+  "images/placeholders/instagram-6.svg": {
+    "mtime": 1790748209.5129702,
+    "ast_hash": "800a5877ebccbf7b0ce5b9f63376ed68",
+    "semantic_hash": ""
+  },
+  "images/placeholders/kids.svg": {
+    "mtime": 1790748209.512104,
+    "ast_hash": "e2f62d68bd862ade7fbc120a36f7acf7",
+    "semantic_hash": ""
+  },
+  "images/placeholders/supper-club.svg": {
+    "mtime": 1790748209.5123627,
+    "ast_hash": "1c6e4e9109cbc5c1ec32f570aa2a3ed5",
+    "semantic_hash": ""
+  },
+  "booking-confirmed.html": {
+    "mtime": 1790753232.5245214,
+    "ast_hash": "d9ddb0d33885adaec08dc5dd1998c830",
+    "semantic_hash": ""
+  },
+  "docs/plans/2026-09-30-book-page-square-flow.md": {
+    "mtime": 1790751659.2048235,
+    "ast_hash": "b1a5cb539c500e1e01a51f1ab57bc92d",
+    "semantic_hash": ""
+  }
+}

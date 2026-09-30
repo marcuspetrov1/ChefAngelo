@@ -1,0 +1,941 @@
+{
+  "directed": false,
+  "multigraph": false,
+  "graph": {},
+  "nodes": [
+    {
+      "label": "main.js",
+      "file_type": "code",
+      "source_file": "js/main.js",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "js_main",
+      "community": 4,
+      "norm_label": "main.js"
+    },
+    {
+      "label": "closeMenu()",
+      "file_type": "code",
+      "source_file": "js/main.js",
+      "source_location": "L14",
+      "_origin": "ast",
+      "id": "js_main_closemenu",
+      "community": 4,
+      "norm_label": "closemenu()"
+    },
+    {
+      "label": "pad()",
+      "file_type": "code",
+      "source_file": "js/main.js",
+      "source_location": "L67",
+      "_origin": "ast",
+      "id": "js_main_pad",
+      "community": 4,
+      "norm_label": "pad()"
+    },
+    {
+      "label": "package.json",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "package",
+      "community": 3,
+      "norm_label": "package.json"
+    },
+    {
+      "label": "name",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L2",
+      "_origin": "ast",
+      "id": "package_name",
+      "community": 3,
+      "norm_label": "name"
+    },
+    {
+      "label": "private",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L3",
+      "_origin": "ast",
+      "id": "package_private",
+      "community": 3,
+      "norm_label": "private"
+    },
+    {
+      "label": "scripts",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L4",
+      "_origin": "ast",
+      "id": "package_scripts",
+      "community": 3,
+      "norm_label": "scripts"
+    },
+    {
+      "label": "test",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L4",
+      "_origin": "ast",
+      "id": "package_scripts_test",
+      "community": 3,
+      "norm_label": "test"
+    },
+    {
+      "label": "devDependencies",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L5",
+      "_origin": "ast",
+      "id": "package_devdependencies",
+      "community": 3,
+      "norm_label": "devdependencies"
+    },
+    {
+      "label": "@playwright/test",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L5",
+      "_origin": "ast",
+      "id": "package_devdependencies_playwright_test",
+      "community": 3,
+      "norm_label": "@playwright/test"
+    },
+    {
+      "label": "playwright.config.js",
+      "file_type": "code",
+      "source_file": "playwright.config.js",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "playwright_config",
+      "community": 5,
+      "norm_label": "playwright.config.js"
+    },
+    {
+      "label": "{ defineConfig, devices }",
+      "file_type": "code",
+      "source_file": "playwright.config.js",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "playwright_config_defineconfig_devices",
+      "community": 5,
+      "norm_label": "{ defineconfig, devices }"
+    },
+    {
+      "label": "site.spec.js",
+      "file_type": "code",
+      "source_file": "tests/site.spec.js",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "tests_site_spec",
+      "community": 1,
+      "norm_label": "site.spec.js"
+    },
+    {
+      "label": "{ test, expect }",
+      "file_type": "code",
+      "source_file": "tests/site.spec.js",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "tests_site_spec_test_expect",
+      "community": 1,
+      "norm_label": "{ test, expect }"
+    },
+    {
+      "label": "fs",
+      "file_type": "code",
+      "source_file": "tests/site.spec.js",
+      "source_location": "L2",
+      "_origin": "ast",
+      "id": "tests_site_spec_fs",
+      "community": 1,
+      "norm_label": "fs"
+    },
+    {
+      "label": "path",
+      "file_type": "code",
+      "source_file": "tests/site.spec.js",
+      "source_location": "L3",
+      "_origin": "ast",
+      "id": "tests_site_spec_path",
+      "community": 1,
+      "norm_label": "path"
+    },
+    {
+      "label": "ROOT",
+      "file_type": "code",
+      "source_file": "tests/site.spec.js",
+      "source_location": "L5",
+      "_origin": "ast",
+      "id": "tests_site_spec_root",
+      "community": 1,
+      "norm_label": "root"
+    },
+    {
+      "label": "PAGES",
+      "file_type": "code",
+      "source_file": "tests/site.spec.js",
+      "source_location": "L6",
+      "_origin": "ast",
+      "id": "tests_site_spec_pages",
+      "community": 1,
+      "norm_label": "pages"
+    },
+    {
+      "label": "QUOTE_PAGES",
+      "file_type": "code",
+      "source_file": "tests/site.spec.js",
+      "source_location": "L12",
+      "_origin": "ast",
+      "id": "tests_site_spec_quote_pages",
+      "community": 1,
+      "norm_label": "quote_pages"
+    },
+    {
+      "label": "TOKENS",
+      "file_type": "code",
+      "source_file": "tests/site.spec.js",
+      "source_location": "L13",
+      "_origin": "ast",
+      "id": "tests_site_spec_tokens",
+      "community": 1,
+      "norm_label": "tokens"
+    },
+    {
+      "label": "url()",
+      "file_type": "code",
+      "source_file": "tests/site.spec.js",
+      "source_location": "L14",
+      "_origin": "ast",
+      "id": "tests_site_spec_url",
+      "community": 1,
+      "norm_label": "url()"
+    },
+    {
+      "label": "isMobile()",
+      "file_type": "code",
+      "source_file": "tests/site.spec.js",
+      "source_location": "L15",
+      "_origin": "ast",
+      "id": "tests_site_spec_ismobile",
+      "community": 1,
+      "norm_label": "ismobile()"
+    },
+    {
+      "label": "README.md",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "readme",
+      "community": 2,
+      "norm_label": "readme.md"
+    },
+    {
+      "label": "Chef Angelo Guida - website",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "readme_chef_angelo_guida_website",
+      "community": 2,
+      "norm_label": "chef angelo guida - website"
+    },
+    {
+      "label": "Run locally",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L5",
+      "_origin": "ast",
+      "id": "readme_run_locally",
+      "community": 2,
+      "norm_label": "run locally"
+    },
+    {
+      "label": "Replace the placeholder tokens",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L11",
+      "_origin": "ast",
+      "id": "readme_replace_the_placeholder_tokens",
+      "community": 2,
+      "norm_label": "replace the placeholder tokens"
+    },
+    {
+      "label": "Square setup for book.html",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L27",
+      "_origin": "ast",
+      "id": "readme_square_setup_for_book_html",
+      "community": 2,
+      "norm_label": "square setup for book.html"
+    },
+    {
+      "label": "Swap placeholder photos",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L35",
+      "_origin": "ast",
+      "id": "readme_swap_placeholder_photos",
+      "community": 2,
+      "norm_label": "swap placeholder photos"
+    },
+    {
+      "label": "Deploy to Netlify",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L38",
+      "_origin": "ast",
+      "id": "readme_deploy_to_netlify",
+      "community": 2,
+      "norm_label": "deploy to netlify"
+    },
+    {
+      "label": "Form emails and CSV export",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L43",
+      "_origin": "ast",
+      "id": "readme_form_emails_and_csv_export",
+      "community": 2,
+      "norm_label": "form emails and csv export"
+    },
+    {
+      "label": "Switch DNS from Wix",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L47",
+      "_origin": "ast",
+      "id": "readme_switch_dns_from_wix",
+      "community": 2,
+      "norm_label": "switch dns from wix"
+    },
+    {
+      "label": "design.md",
+      "file_type": "document",
+      "source_file": "docs/design.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "docs_design",
+      "community": 0,
+      "norm_label": "design.md"
+    },
+    {
+      "label": "Chef Angelo Guida \u2014 Website Rebuild Plan",
+      "file_type": "document",
+      "source_file": "docs/design.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "docs_design_chef_angelo_guida_website_rebuild_plan",
+      "community": 0,
+      "norm_label": "chef angelo guida \u2014 website rebuild plan"
+    },
+    {
+      "label": "Context",
+      "file_type": "document",
+      "source_file": "docs/design.md",
+      "source_location": "L3",
+      "_origin": "ast",
+      "id": "docs_design_context",
+      "community": 0,
+      "norm_label": "context"
+    },
+    {
+      "label": "File structure",
+      "file_type": "document",
+      "source_file": "docs/design.md",
+      "source_location": "L15",
+      "_origin": "ast",
+      "id": "docs_design_file_structure",
+      "community": 0,
+      "norm_label": "file structure"
+    },
+    {
+      "label": "Visual system (css/styles.css)",
+      "file_type": "document",
+      "source_file": "docs/design.md",
+      "source_location": "L32",
+      "_origin": "ast",
+      "id": "docs_design_visual_system_css_styles_css",
+      "community": 0,
+      "norm_label": "visual system (css/styles.css)"
+    },
+    {
+      "label": "Pages and content",
+      "file_type": "document",
+      "source_file": "docs/design.md",
+      "source_location": "L37",
+      "_origin": "ast",
+      "id": "docs_design_pages_and_content",
+      "community": 0,
+      "norm_label": "pages and content"
+    },
+    {
+      "label": "Square placeholders",
+      "file_type": "document",
+      "source_file": "docs/design.md",
+      "source_location": "L49",
+      "_origin": "ast",
+      "id": "docs_design_square_placeholders",
+      "community": 0,
+      "norm_label": "square placeholders"
+    },
+    {
+      "label": "Forms (Netlify)",
+      "file_type": "document",
+      "source_file": "docs/design.md",
+      "source_location": "L52",
+      "_origin": "ast",
+      "id": "docs_design_forms_netlify",
+      "community": 0,
+      "norm_label": "forms (netlify)"
+    },
+    {
+      "label": "SEO",
+      "file_type": "document",
+      "source_file": "docs/design.md",
+      "source_location": "L61",
+      "_origin": "ast",
+      "id": "docs_design_seo",
+      "community": 0,
+      "norm_label": "seo"
+    },
+    {
+      "label": "Verification",
+      "file_type": "document",
+      "source_file": "docs/design.md",
+      "source_location": "L66",
+      "_origin": "ast",
+      "id": "docs_design_verification",
+      "community": 0,
+      "norm_label": "verification"
+    },
+    {
+      "label": "Out of scope (for now)",
+      "file_type": "document",
+      "source_file": "docs/design.md",
+      "source_location": "L79",
+      "_origin": "ast",
+      "id": "docs_design_out_of_scope_for_now",
+      "community": 0,
+      "norm_label": "out of scope (for now)"
+    },
+    {
+      "label": "2026-09-30-book-page-square-flow.md",
+      "file_type": "document",
+      "source_file": "docs/plans/2026-09-30-book-page-square-flow.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "docs_plans_2026_09_30_book_page_square_flow",
+      "community": 6,
+      "norm_label": "2026-09-30-book-page-square-flow.md"
+    },
+    {
+      "label": "Book page: Square booking flow \u2014 implementation plan",
+      "file_type": "document",
+      "source_file": "docs/plans/2026-09-30-book-page-square-flow.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "docs_plans_2026_09_30_book_page_square_flow_book_page_square_booking_flow_implementation_plan",
+      "community": 6,
+      "norm_label": "book page: square booking flow \u2014 implementation plan"
+    },
+    {
+      "label": "Context",
+      "file_type": "document",
+      "source_file": "docs/plans/2026-09-30-book-page-square-flow.md",
+      "source_location": "L3",
+      "_origin": "ast",
+      "id": "docs_plans_2026_09_30_book_page_square_flow_context",
+      "community": 6,
+      "norm_label": "context"
+    },
+    {
+      "label": "Global Constraints",
+      "file_type": "document",
+      "source_file": "docs/plans/2026-09-30-book-page-square-flow.md",
+      "source_location": "L12",
+      "_origin": "ast",
+      "id": "docs_plans_2026_09_30_book_page_square_flow_global_constraints",
+      "community": 6,
+      "norm_label": "global constraints"
+    },
+    {
+      "label": "Task 1: Per-date class tokens",
+      "file_type": "document",
+      "source_file": "docs/plans/2026-09-30-book-page-square-flow.md",
+      "source_location": "L23",
+      "_origin": "ast",
+      "id": "docs_plans_2026_09_30_book_page_square_flow_task_1_per_date_class_tokens",
+      "community": 6,
+      "norm_label": "task 1: per-date class tokens"
+    },
+    {
+      "label": "Task 2: Restructure book.html",
+      "file_type": "document",
+      "source_file": "docs/plans/2026-09-30-book-page-square-flow.md",
+      "source_location": "L42",
+      "_origin": "ast",
+      "id": "docs_plans_2026_09_30_book_page_square_flow_task_2_restructure_book_html",
+      "community": 6,
+      "norm_label": "task 2: restructure book.html"
+    },
+    {
+      "label": "Task 3: Booking confirmed page",
+      "file_type": "document",
+      "source_file": "docs/plans/2026-09-30-book-page-square-flow.md",
+      "source_location": "L78",
+      "_origin": "ast",
+      "id": "docs_plans_2026_09_30_book_page_square_flow_task_3_booking_confirmed_page",
+      "community": 6,
+      "norm_label": "task 3: booking confirmed page"
+    },
+    {
+      "label": "Task 4: Docs",
+      "file_type": "document",
+      "source_file": "docs/plans/2026-09-30-book-page-square-flow.md",
+      "source_location": "L95",
+      "_origin": "ast",
+      "id": "docs_plans_2026_09_30_book_page_square_flow_task_4_docs",
+      "community": 6,
+      "norm_label": "task 4: docs"
+    }
+  ],
+  "links": [
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "js/main.js",
+      "source_location": "L14",
+      "weight": 1.0,
+      "source": "js_main",
+      "target": "js_main_closemenu",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "js/main.js",
+      "source_location": "L67",
+      "weight": 1.0,
+      "source": "js_main",
+      "target": "js_main_pad",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "package",
+      "target": "package_devdependencies",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "package",
+      "target": "package_name",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "package",
+      "target": "package_private",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "package",
+      "target": "package_scripts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "package_scripts",
+      "target": "package_scripts_test",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "package_devdependencies",
+      "target": "package_devdependencies_playwright_test",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "playwright.config.js",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "playwright_config",
+      "target": "playwright_config_defineconfig_devices",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/site.spec.js",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "tests_site_spec",
+      "target": "tests_site_spec_fs",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/site.spec.js",
+      "source_location": "L15",
+      "weight": 1.0,
+      "source": "tests_site_spec",
+      "target": "tests_site_spec_ismobile",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/site.spec.js",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "tests_site_spec",
+      "target": "tests_site_spec_pages",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/site.spec.js",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "tests_site_spec",
+      "target": "tests_site_spec_path",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/site.spec.js",
+      "source_location": "L12",
+      "weight": 1.0,
+      "source": "tests_site_spec",
+      "target": "tests_site_spec_quote_pages",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/site.spec.js",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "tests_site_spec",
+      "target": "tests_site_spec_root",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/site.spec.js",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "tests_site_spec",
+      "target": "tests_site_spec_test_expect",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/site.spec.js",
+      "source_location": "L13",
+      "weight": 1.0,
+      "source": "tests_site_spec",
+      "target": "tests_site_spec_tokens",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/site.spec.js",
+      "source_location": "L14",
+      "weight": 1.0,
+      "source": "tests_site_spec",
+      "target": "tests_site_spec_url",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "readme",
+      "target": "readme_chef_angelo_guida_website",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L38",
+      "weight": 1.0,
+      "source": "readme_chef_angelo_guida_website",
+      "target": "readme_deploy_to_netlify",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L43",
+      "weight": 1.0,
+      "source": "readme_chef_angelo_guida_website",
+      "target": "readme_form_emails_and_csv_export",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L11",
+      "weight": 1.0,
+      "source": "readme_chef_angelo_guida_website",
+      "target": "readme_replace_the_placeholder_tokens",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "readme_chef_angelo_guida_website",
+      "target": "readme_run_locally",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L27",
+      "weight": 1.0,
+      "source": "readme_chef_angelo_guida_website",
+      "target": "readme_square_setup_for_book_html",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L35",
+      "weight": 1.0,
+      "source": "readme_chef_angelo_guida_website",
+      "target": "readme_swap_placeholder_photos",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L47",
+      "weight": 1.0,
+      "source": "readme_chef_angelo_guida_website",
+      "target": "readme_switch_dns_from_wix",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/design.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "docs_design",
+      "target": "docs_design_chef_angelo_guida_website_rebuild_plan",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/design.md",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "docs_design_chef_angelo_guida_website_rebuild_plan",
+      "target": "docs_design_context",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/design.md",
+      "source_location": "L15",
+      "weight": 1.0,
+      "source": "docs_design_chef_angelo_guida_website_rebuild_plan",
+      "target": "docs_design_file_structure",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/design.md",
+      "source_location": "L52",
+      "weight": 1.0,
+      "source": "docs_design_chef_angelo_guida_website_rebuild_plan",
+      "target": "docs_design_forms_netlify",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/design.md",
+      "source_location": "L79",
+      "weight": 1.0,
+      "source": "docs_design_chef_angelo_guida_website_rebuild_plan",
+      "target": "docs_design_out_of_scope_for_now",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/design.md",
+      "source_location": "L37",
+      "weight": 1.0,
+      "source": "docs_design_chef_angelo_guida_website_rebuild_plan",
+      "target": "docs_design_pages_and_content",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/design.md",
+      "source_location": "L61",
+      "weight": 1.0,
+      "source": "docs_design_chef_angelo_guida_website_rebuild_plan",
+      "target": "docs_design_seo",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/design.md",
+      "source_location": "L49",
+      "weight": 1.0,
+      "source": "docs_design_chef_angelo_guida_website_rebuild_plan",
+      "target": "docs_design_square_placeholders",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/design.md",
+      "source_location": "L66",
+      "weight": 1.0,
+      "source": "docs_design_chef_angelo_guida_website_rebuild_plan",
+      "target": "docs_design_verification",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/design.md",
+      "source_location": "L32",
+      "weight": 1.0,
+      "source": "docs_design_chef_angelo_guida_website_rebuild_plan",
+      "target": "docs_design_visual_system_css_styles_css",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/plans/2026-09-30-book-page-square-flow.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "docs_plans_2026_09_30_book_page_square_flow",
+      "target": "docs_plans_2026_09_30_book_page_square_flow_book_page_square_booking_flow_implementation_plan",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/plans/2026-09-30-book-page-square-flow.md",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "docs_plans_2026_09_30_book_page_square_flow_book_page_square_booking_flow_implementation_plan",
+      "target": "docs_plans_2026_09_30_book_page_square_flow_context",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/plans/2026-09-30-book-page-square-flow.md",
+      "source_location": "L12",
+      "weight": 1.0,
+      "source": "docs_plans_2026_09_30_book_page_square_flow_book_page_square_booking_flow_implementation_plan",
+      "target": "docs_plans_2026_09_30_book_page_square_flow_global_constraints",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/plans/2026-09-30-book-page-square-flow.md",
+      "source_location": "L23",
+      "weight": 1.0,
+      "source": "docs_plans_2026_09_30_book_page_square_flow_book_page_square_booking_flow_implementation_plan",
+      "target": "docs_plans_2026_09_30_book_page_square_flow_task_1_per_date_class_tokens",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/plans/2026-09-30-book-page-square-flow.md",
+      "source_location": "L42",
+      "weight": 1.0,
+      "source": "docs_plans_2026_09_30_book_page_square_flow_book_page_square_booking_flow_implementation_plan",
+      "target": "docs_plans_2026_09_30_book_page_square_flow_task_2_restructure_book_html",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/plans/2026-09-30-book-page-square-flow.md",
+      "source_location": "L78",
+      "weight": 1.0,
+      "source": "docs_plans_2026_09_30_book_page_square_flow_book_page_square_booking_flow_implementation_plan",
+      "target": "docs_plans_2026_09_30_book_page_square_flow_task_3_booking_confirmed_page",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/plans/2026-09-30-book-page-square-flow.md",
+      "source_location": "L95",
+      "weight": 1.0,
+      "source": "docs_plans_2026_09_30_book_page_square_flow_book_page_square_booking_flow_implementation_plan",
+      "target": "docs_plans_2026_09_30_book_page_square_flow_task_4_docs",
+      "confidence_score": 1.0
+    }
+  ],
+  "hyperedges": [],
+  "built_at_commit": "4922922072a2263ef08fac134bbd17c98982a4f4"
+}
