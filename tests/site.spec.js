@@ -10,7 +10,7 @@ const PAGES = [
   'experiences/date-night.html', 'experiences/cooking-classes.html', 'experiences/supper-club.html',
 ];
 const QUOTE_PAGES = ['private-chef', 'private-parties', 'kids-parties', 'date-night'].map((n) => `experiences/${n}.html`);
-const TOKENS = ['[SQUARE_BOOKING_URL]', '[SQUARE_GIFT_CARD_URL]'];
+const TOKENS = ['[SQUARE_BOOKING_URL]', '[SQUARE_GIFT_CARD_URL]', '[SQUARE_CLASS_LINK_1]', '[SQUARE_CLASS_LINK_2]', '[SQUARE_CLASS_LINK_3]'];
 const url = (p) => '/' + p;
 const isMobile = (testInfo) => testInfo.project.name === 'mobile';
 
@@ -151,4 +151,12 @@ test('placeholder link click shows "Link coming soon"', async ({ page }) => {
   await a.click();
   await expect(page.locator('.soon-note').first()).toHaveText('Link coming soon');
   expect(new URL(page.url()).pathname).toBe('/index.html');
+});
+
+test('class date cards use per-date Square payment link tokens', async ({ page }) => {
+  for (const p of ['index.html', 'experiences/cooking-classes.html']) {
+    await page.goto(url(p));
+    const hrefs = await page.$$eval('.date-card a.btn', (as) => as.map((a) => a.getAttribute('href')));
+    expect(hrefs, p).toEqual(['[SQUARE_CLASS_LINK_1]', '[SQUARE_CLASS_LINK_2]', '[SQUARE_CLASS_LINK_3]']);
+  }
 });
