@@ -5,7 +5,7 @@ const path = require('path');
 const ROOT = path.resolve(__dirname, '..');
 const PAGES = [
   'index.html', 'about.html', 'menus.html', 'gallery.html', 'faq-contact.html', 'book.html',
-  'thank-you.html', '404.html',
+  'thank-you.html', 'booking-confirmed.html', '404.html',
   'experiences/private-chef.html', 'experiences/private-parties.html', 'experiences/kids-parties.html',
   'experiences/date-night.html', 'experiences/cooking-classes.html', 'experiences/supper-club.html',
 ];
@@ -167,4 +167,10 @@ test('book page chooser jumps to each booking path', async ({ page }) => {
   expect(targets).toEqual(['#private-events', '#classes', '#gift']);
   for (const t of targets) await expect(page.locator(t)).toHaveCount(1);
   await expect(page.locator('#private-events #square-embed')).toHaveCount(1);
+});
+
+test('booking-confirmed is noindex and not in sitemap', async ({ page }) => {
+  await page.goto('/booking-confirmed.html');
+  await expect(page.locator('meta[name=robots]')).toHaveAttribute('content', /noindex/);
+  expect(fs.readFileSync(path.join(ROOT, 'sitemap.xml'), 'utf8')).not.toContain('booking-confirmed');
 });
