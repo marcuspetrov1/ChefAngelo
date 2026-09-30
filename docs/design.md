@@ -19,6 +19,7 @@ chef-angelo-guida/
   experiences/private-chef.html  private-parties.html  kids-parties.html
               date-night.html    cooking-classes.html  supper-club.html
   menus.html  about.html  gallery.html  faq-contact.html  book.html  thank-you.html  404.html
+  booking-confirmed.html  # noindex; redirect target after Square checkout
   css/styles.css        # tokens, layout, components
   js/main.js            # mobile nav, gallery filter, placeholder-link guard, sticky bar
   images/placeholders/  # warm-toned SVG placeholders labeled "PHOTO: …"
@@ -43,10 +44,10 @@ The header, footer and mobile sticky "Book Now" bar are copied into every page, 
 - **About:** Food Philosophy ("Food is culture", social-first events, regional only, against fake authenticity) and the full bio.
 - **Gallery:** filter buttons (All / Dinners / Classes / Kids / Events) using `data-category`, and lazy-loaded images.
 - **FAQ and Contact:** `<details>` accordion (classes, in-home parties, menus, BYOB, pricing, gifting), contact form, `[phone]`, and the email address.
-- **Book:** Square button fallback, then a dashed box labeled "Paste Square embed code here" with an HTML comment marker. Also Gift an Experience (`[SQUARE_GIFT_CARD_URL]`), payment methods and policy.
+- **Book:** Chooser with three cards (Private dinner or party, Cooking class or supper club, Gift an experience). Private events section with Square Appointments embed, three steps to complete the booking (pick a date, plan the menu, pay the balance by Square Invoice), and a fallback link to experiences/private-parties.html#quote. Classes section with three date cards, each with a per-date Square Payment Link (`[SQUARE_CLASS_LINK_1]`, `_2`, `_3`), plus a checkout note and supper club waitlist link. Gift section with `[SQUARE_GIFT_CARD_URL]`. Payment methods and policy.
 
 ## Square placeholders
-Literal tokens: `[SQUARE_BOOKING_URL]`, `[SQUARE_GIFT_CARD_URL]`, `[POLICY_TEXT]`, `[phone]`, `[INSTAGRAM_URL]`, and `[DATE] · [TIME] · [SEATS]` for class dates. In `main.js`, any link whose href still starts with `[` is intercepted and shows a "Link coming soon" note. Links open in the same tab.
+Literal tokens: `[SQUARE_BOOKING_URL]`, `[SQUARE_GIFT_CARD_URL]`, `[SQUARE_CLASS_LINK_1]`, `[SQUARE_CLASS_LINK_2]`, `[SQUARE_CLASS_LINK_3]`, `[POLICY_TEXT]`, `[phone]`, `[INSTAGRAM_URL]`, and `[DATE] · [TIME] · [SEATS]` for class dates. In `main.js`, any link whose href still starts with `[` is intercepted and shows a "Link coming soon" note. Links open in the same tab.
 
 ## Forms (Netlify)
 All forms have `data-netlify="true"`, a `netlify-honeypot` spam trap, and `action="/thank-you.html"`:

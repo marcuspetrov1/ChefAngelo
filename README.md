@@ -15,6 +15,9 @@ Do a project-wide find-and-replace (VS Code: Cmd+Shift+H, or `sed`). Replace wit
 |---|---|
 | `[SQUARE_BOOKING_URL]` | Square Appointments / booking page URL |
 | `[SQUARE_GIFT_CARD_URL]` | Square gift card page URL |
+| `[SQUARE_CLASS_LINK_1]` | Square Payment Link for each upcoming class or supper club date (same order as the date cards in index.html, book.html, experiences/cooking-classes.html) |
+| `[SQUARE_CLASS_LINK_2]` | Square Payment Link for each upcoming class or supper club date (same order as the date cards in index.html, book.html, experiences/cooking-classes.html) |
+| `[SQUARE_CLASS_LINK_3]` | Square Payment Link for each upcoming class or supper club date (same order as the date cards in index.html, book.html, experiences/cooking-classes.html) |
 | `[POLICY_TEXT]` | Cancellation/deposit policy text |
 | `[phone]` | Phone number (text, not inside an href) |
 | `[INSTAGRAM_URL]` | https://instagram.com/... profile URL |
@@ -22,8 +25,11 @@ Do a project-wide find-and-replace (VS Code: Cmd+Shift+H, or `sed`). Replace wit
 
 Until replaced, clicking those links shows "Link coming soon".
 
-## Square embed on book.html
-Open `book.html`, find the dashed box marked `Paste Square embed code here` (HTML comment marker beside it), and paste the embed snippet from Square Dashboard (Online > Appointments > Share/Embed) in place of the placeholder text.
+## Square setup for book.html
+1. **Private events:** In Square Appointments create a service called "Private Event – Date Hold" with a deposit or card-on-file cancellation policy. Connect your Google Calendar so busy days are blocked. Copy the embed code (Online > Appointments > Share/Embed; wording may differ in your dashboard) and paste it in place of the dashed `Paste Square embed code here` box in `book.html`. Note that some features (for example prepayment) may need Appointments Plus or Premium; check your plan.
+2. **After the menu is agreed**, send the balance as a Square Invoice.
+3. **Classes and supper club:** Create one Square Payment Link per date with the seat quantity. In each link's checkout settings, set the redirect URL to `https://chefangeloguida.com/booking-confirmed.html`. Paste each link over `[SQUARE_CLASS_LINK_N]`.
+4. Turn on Square's customer confirmation/receipt emails.
 
 ## Swap placeholder photos
 Placeholders live in `images/placeholders/*.svg`. Add real photos (JPG/WebP, ideally under 300 KB, hero ~1600px wide) to `images/`, then change the `src` in the HTML and update the `alt` text (find with `grep -rn placeholders *.html experiences`). Keep `width`/`height` attributes.
