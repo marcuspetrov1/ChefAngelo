@@ -21,7 +21,7 @@ Do a project-wide find-and-replace (VS Code: Cmd+Shift+H, or `sed`). Replace wit
 | `[POLICY_TEXT]` | Cancellation/deposit policy text |
 | `[phone]` | Phone number (text, not inside an href) |
 | `[INSTAGRAM_URL]` | https://instagram.com/... profile URL |
-| `[DATE] · [TIME] · [SEATS]` | Each upcoming class/dinner, e.g. `Sat Oct 12 · 6:00 PM · 8 seats` (edit per card in index.html, experiences/cooking-classes.html, experiences/supper-club.html) |
+| `[DATE] · [TIME] · [SEATS]` | Each upcoming class/dinner, e.g. `Sat Oct 12 · 6:00 PM · 8 seats` (edit per card in index.html, book.html, experiences/cooking-classes.html, experiences/supper-club.html) |
 
 Until replaced, clicking those links shows "Link coming soon".
 
