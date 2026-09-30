@@ -47,7 +47,7 @@ The header, footer and mobile sticky "Book Now" bar are copied into every page, 
 - **Book:** Chooser with three cards (Private dinner or party, Cooking class or supper club, Gift an experience). Private events section with Square Appointments embed, three steps to complete the booking (pick a date, plan the menu, pay the balance by Square Invoice), and a fallback link to experiences/private-parties.html#quote. Classes section with three date cards, each with a per-date Square Payment Link (`[SQUARE_CLASS_LINK_1]`, `_2`, `_3`), plus a checkout note and supper club waitlist link. Gift section with `[SQUARE_GIFT_CARD_URL]`. Payment methods and policy.
 
 ## Square placeholders
-Literal tokens: `[SQUARE_BOOKING_URL]`, `[SQUARE_GIFT_CARD_URL]`, `[SQUARE_CLASS_LINK_1]`, `[SQUARE_CLASS_LINK_2]`, `[SQUARE_CLASS_LINK_3]`, `[POLICY_TEXT]`, `[phone]`, `[INSTAGRAM_URL]`, and `[DATE] · [TIME] · [SEATS]` for class dates. In `main.js`, any link whose href still starts with `[` is intercepted and shows a "Link coming soon" note. Links open in the same tab.
+Literal tokens: `[SQUARE_GIFT_CARD_URL]`, `[SQUARE_CLASS_LINK_1]`, `[SQUARE_CLASS_LINK_2]`, `[SQUARE_CLASS_LINK_3]`, `[POLICY_TEXT]`, `[phone]`, `[INSTAGRAM_URL]`, and `[DATE] · [TIME] · [SEATS]` for class dates. In `main.js`, any link whose href still starts with `[` is intercepted and shows a "Link coming soon" note. Links open in the same tab. Book Now buttons and the sticky bar link to `/book.html` sections (`#choose`, `#private-events`, `#classes`).
 
 ## Forms (Netlify)
 All forms have `data-netlify="true"`, a `netlify-honeypot` spam trap, and `action="/thank-you.html"`:

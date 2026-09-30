@@ -10,7 +10,7 @@ const PAGES = [
   'experiences/date-night.html', 'experiences/cooking-classes.html', 'experiences/supper-club.html',
 ];
 const QUOTE_PAGES = ['private-chef', 'private-parties', 'kids-parties', 'date-night'].map((n) => `experiences/${n}.html`);
-const TOKENS = ['[SQUARE_BOOKING_URL]', '[SQUARE_GIFT_CARD_URL]', '[SQUARE_CLASS_LINK_1]', '[SQUARE_CLASS_LINK_2]', '[SQUARE_CLASS_LINK_3]'];
+const TOKENS = ['[SQUARE_GIFT_CARD_URL]', '[SQUARE_CLASS_LINK_1]', '[SQUARE_CLASS_LINK_2]', '[SQUARE_CLASS_LINK_3]'];
 const url = (p) => '/' + p;
 const isMobile = (testInfo) => testInfo.project.name === 'mobile';
 
@@ -146,7 +146,7 @@ test('gallery filters show/hide correct items', async ({ page }) => {
 
 test('placeholder link click shows "Link coming soon"', async ({ page }) => {
   await page.goto('/index.html');
-  const a = page.locator('main a[href="[SQUARE_BOOKING_URL]"]').first();
+  const a = page.locator('main a[href="[SQUARE_CLASS_LINK_1]"]').first();
   await a.scrollIntoViewIfNeeded();
   await a.click();
   await expect(page.locator('.soon-note').first()).toHaveText('Link coming soon');
@@ -173,4 +173,16 @@ test('booking-confirmed is noindex and not in sitemap', async ({ page }) => {
   await page.goto('/booking-confirmed.html');
   await expect(page.locator('meta[name=robots]')).toHaveAttribute('content', /noindex/);
   expect(fs.readFileSync(path.join(ROOT, 'sitemap.xml'), 'utf8')).not.toContain('booking-confirmed');
+});
+
+test('Book Now buttons route to the on-site booking page', async ({ page }) => {
+  for (const p of PAGES) {
+    await page.goto(url(p));
+    expect(await page.locator('a[href="[SQUARE_BOOKING_URL]"]').count(), p).toBe(0);
+    await expect(page.locator('.sticky-book a'), p).toHaveAttribute('href', '/book.html#choose');
+  }
+  await page.goto('/experiences/cooking-classes.html');
+  expect(await page.$$eval('main a.btn', (as) => as.filter((a) => a.textContent.trim() === 'Book Now').map((a) => a.getAttribute('href')))).toEqual(['/book.html#classes', '/book.html#classes']);
+  await page.goto('/experiences/private-chef.html');
+  expect(await page.$$eval('main a.btn', (as) => as.filter((a) => a.textContent.trim() === 'Book Now').map((a) => a.getAttribute('href')))).toEqual(['/book.html#private-events', '/book.html#private-events']);
 });
