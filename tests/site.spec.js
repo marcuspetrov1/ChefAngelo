@@ -10,7 +10,7 @@ const PAGES = [
   'experiences/date-night.html', 'experiences/cooking-classes.html', 'experiences/supper-club.html',
 ];
 const QUOTE_PAGES = ['private-chef', 'private-parties', 'kids-parties', 'date-night'].map((n) => `experiences/${n}.html`);
-const TOKENS = ['[SQUARE_GIFT_CARD_URL]', '[SQUARE_CLASS_LINK_1]', '[SQUARE_CLASS_LINK_2]', '[SQUARE_CLASS_LINK_3]'];
+const TOKENS = ['[SQUARE_BOOKING_SITE_URL]', '[SQUARE_GIFT_CARD_URL]', '[SQUARE_CLASS_LINK_1]', '[SQUARE_CLASS_LINK_2]', '[SQUARE_CLASS_LINK_3]'];
 const url = (p) => '/' + p;
 const isMobile = (testInfo) => testInfo.project.name === 'mobile';
 
@@ -166,7 +166,8 @@ test('book page chooser jumps to each booking path', async ({ page }) => {
   const targets = await page.$$eval('#choose .choice-card', (as) => as.map((a) => a.getAttribute('href')));
   expect(targets).toEqual(['#private-events', '#classes', '#gift']);
   for (const t of targets) await expect(page.locator(t)).toHaveCount(1);
-  await expect(page.locator('#private-events #square-embed')).toHaveCount(1);
+  await expect(page.locator('#private-events a.btn')).toHaveAttribute('href', '[SQUARE_BOOKING_SITE_URL]');
+  await expect(page.locator('.embed-box, #square-embed, iframe')).toHaveCount(0);
 });
 
 test('booking-confirmed is noindex and not in sitemap', async ({ page }) => {
@@ -178,11 +179,26 @@ test('booking-confirmed is noindex and not in sitemap', async ({ page }) => {
 test('Book Now buttons route to the on-site booking page', async ({ page }) => {
   for (const p of PAGES) {
     await page.goto(url(p));
-    expect(await page.locator('a[href="[SQUARE_BOOKING_URL]"]').count(), p).toBe(0);
     await expect(page.locator('.sticky-book a'), p).toHaveAttribute('href', '/book.html#choose');
   }
   await page.goto('/experiences/cooking-classes.html');
   expect(await page.$$eval('main a.btn', (as) => as.filter((a) => a.textContent.trim() === 'Book Now').map((a) => a.getAttribute('href')))).toEqual(['/book.html#classes', '/book.html#classes']);
   await page.goto('/experiences/private-chef.html');
   expect(await page.$$eval('main a.btn', (as) => as.filter((a) => a.textContent.trim() === 'Book Now').map((a) => a.getAttribute('href')))).toEqual(['/book.html#private-events', '/book.html#private-events']);
+});
+
+test('private events button links out to the Square booking site', async ({ page }) => {
+  await page.goto('/book.html');
+  const a = page.locator('#private-events a[href="[SQUARE_BOOKING_SITE_URL]"]');
+  await a.scrollIntoViewIfNeeded();
+  await a.click();
+  await expect(page.locator('#private-events .soon-note')).toHaveText('Link coming soon');
+  expect(new URL(page.url()).pathname).toBe('/book.html');
+});
+
+test('Square links open in the same tab', async ({ page }) => {
+  for (const p of PAGES) {
+    await page.goto(url(p));
+    expect(await page.locator('a[href^="[SQUARE"][target]').count(), p).toBe(0);
+  }
 });
