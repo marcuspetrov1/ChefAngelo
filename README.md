@@ -13,6 +13,7 @@ Do a project-wide find-and-replace (VS Code: Cmd+Shift+H, or `sed`). Replace wit
 
 | Token | Replace with |
 |---|---|
+| `[SQUARE_BOOKING_SITE_URL]` | Square Appointments booking site URL (the hosted page for the Private Event – Date Hold service). Use the same URL for the Book button on your Google Business Profile and Instagram |
 | `[SQUARE_GIFT_CARD_URL]` | Square gift card page URL |
 | `[SQUARE_CLASS_LINK_1]` | Square Payment Link for the 1st date card. The token appears on index.html, book.html and experiences/cooking-classes.html; a project-wide find-and-replace covers all three |
 | `[SQUARE_CLASS_LINK_2]` | Square Payment Link for the 2nd date card. The token appears on index.html, book.html and experiences/cooking-classes.html; a project-wide find-and-replace covers all three |
@@ -25,9 +26,9 @@ Do a project-wide find-and-replace (VS Code: Cmd+Shift+H, or `sed`). Replace wit
 Until replaced, clicking those links shows "Link coming soon".
 
 ## Square setup for book.html
-All "Book Now" buttons across the site go to book.html, which is the single entry point into Square.
+All "Book Now" buttons across the site go to book.html, which is the single entry point into Square. Every Square page opens in the same tab. Square payment links send guests back to booking-confirmed.html. The Appointments booking site doesn't support a custom return page; guests get Square's confirmation email.
 
-1. **Private events:** In Square Appointments create a service called "Private Event – Date Hold" with a deposit or card-on-file cancellation policy. Connect your Google Calendar so busy days are blocked. Copy the embed code (Online > Appointments > Share/Embed; wording may differ in your dashboard) and paste it in place of the dashed `Paste Square embed code here` box in `book.html`. Note that some features (for example prepayment) may need Appointments Plus or Premium; check your plan.
+1. **Private events:** In Square Appointments create a service called "Private Event – Date Hold" with a deposit or card-on-file cancellation policy. Connect your Google Calendar so busy days are blocked. Turn on your Square Appointments online booking site and copy its URL (wording may differ in your dashboard), then paste it over `[SQUARE_BOOKING_SITE_URL]` in `book.html`. Note that some features (for example prepayment) may need Appointments Plus or Premium; check your plan.
 2. **After the menu is agreed**, send the balance as a Square Invoice.
 3. **Classes and supper club:** Create one Square Payment Link per date with the seat quantity. In each link's checkout settings, set the redirect URL to `https://chefangeloguida.com/booking-confirmed.html`. Limit each link to the number of seats (for example, track inventory or set a quantity limit on that item equal to the seat count, and check that it stops selling at zero; wording may differ in the dashboard). Paste each link over `[SQUARE_CLASS_LINK_N]`.
 4. Turn on Square's customer confirmation/receipt emails.

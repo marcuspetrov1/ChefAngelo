@@ -1,7 +1,7 @@
 # Chef Angelo Guida — Website Rebuild Plan
 
 ## Context
-A friend of the user, Chef Angelo Guida, an Italian personal chef in Los Angeles, needs a new chefangeloguida.com. It replaces the current Wix site with a custom static site. Booking and payments stay entirely in **Square**; the site only links to Square and embeds it. Decisions already made:
+A friend of the user, Chef Angelo Guida, an Italian personal chef in Los Angeles, needs a new chefangeloguida.com. It replaces the current Wix site with a custom static site. Booking and payments stay entirely in **Square**; the site only links to Square-hosted pages (booking site, payment links, gift cards). Decisions already made:
 - plain HTML/CSS/JS with no build step
 - hosted on Netlify
 - Netlify Forms email every submission to chef.angeloguida@gmail.com and store signups (exportable as CSV)
@@ -44,10 +44,10 @@ The header, footer and mobile sticky "Book Now" bar are copied into every page, 
 - **About:** Food Philosophy ("Food is culture", social-first events, regional only, against fake authenticity) and the full bio.
 - **Gallery:** filter buttons (All / Dinners / Classes / Kids / Events) using `data-category`, and lazy-loaded images.
 - **FAQ and Contact:** `<details>` accordion (classes, in-home parties, menus, BYOB, pricing, gifting), contact form, `[phone]`, and the email address.
-- **Book:** Chooser with three cards (Private dinner or party, Cooking class or supper club, Gift an experience). Private events section with Square Appointments embed, three steps to complete the booking (pick a date, plan the menu, pay the balance by Square Invoice), and a fallback link to experiences/private-parties.html#quote. Classes section with three date cards, each with a per-date Square Payment Link (`[SQUARE_CLASS_LINK_1]`, `_2`, `_3`), plus a checkout note and supper club waitlist link. Gift section with `[SQUARE_GIFT_CARD_URL]`. Payment methods and policy.
+- **Book:** Chooser with three cards (Private dinner or party, Cooking class or supper club, Gift an experience). Private events section with three steps to complete the booking (pick a date, plan the menu, pay the balance by Square Invoice), a "See open dates" button to the Square booking site (`[SQUARE_BOOKING_SITE_URL]`), and a fallback link to experiences/private-parties.html#quote. Classes section with three date cards, each with a per-date Square Payment Link (`[SQUARE_CLASS_LINK_1]`, `_2`, `_3`), plus a checkout note and supper club waitlist link. Gift section with `[SQUARE_GIFT_CARD_URL]`. Payment methods and policy.
 
 ## Square placeholders
-Literal tokens: `[SQUARE_GIFT_CARD_URL]`, `[SQUARE_CLASS_LINK_1]`, `[SQUARE_CLASS_LINK_2]`, `[SQUARE_CLASS_LINK_3]`, `[POLICY_TEXT]`, `[phone]`, `[INSTAGRAM_URL]`, and `[DATE] · [TIME] · [SEATS]` for class dates. In `main.js`, any link whose href still starts with `[` is intercepted and shows a "Link coming soon" note. Links open in the same tab. Book Now buttons and the sticky bar link to `/book.html` sections (`#choose`, `#private-events`, `#classes`).
+Literal tokens: `[SQUARE_BOOKING_SITE_URL]`, `[SQUARE_GIFT_CARD_URL]`, `[SQUARE_CLASS_LINK_1]`, `[SQUARE_CLASS_LINK_2]`, `[SQUARE_CLASS_LINK_3]`, `[POLICY_TEXT]`, `[phone]`, `[INSTAGRAM_URL]`, and `[DATE] · [TIME] · [SEATS]` for class dates. In `main.js`, any link whose href still starts with `[` is intercepted and shows a "Link coming soon" note. Links open in the same tab. Book Now buttons and the sticky bar link to `/book.html` sections (`#choose`, `#private-events`, `#classes`).
 
 ## Forms (Netlify)
 All forms have `data-netlify="true"`, a `netlify-honeypot` spam trap, and `action="/thank-you.html"`:
