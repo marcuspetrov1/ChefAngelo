@@ -7,6 +7,7 @@ Static HTML/CSS/JS site (no build step) for chefangeloguida.com. Booking and pay
 python3 -m http.server 4173     # or: npx serve . -l 4173
 ```
 Open http://localhost:4173. Tests: `npm install && npx playwright install chromium && npm test` (mobile 390px + desktop 1280px).
+The same suite runs on GitHub Actions for every pull request and every push to `main` (`.github/workflows/tests.yml`).
 
 ## Replace the placeholder tokens
 Do a project-wide find-and-replace (VS Code: Cmd+Shift+H, or `sed`). Replace with the real value, keeping the surrounding quotes:
